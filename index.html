@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a9162b">
+  <title>BloodLink | Become a Lifesaver</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="page">
+    <section class="intro reveal">
+      <a class="logo" href="#" aria-label="BloodLink home"><span class="logo-mark">♥</span> BloodLink</a>
+      <div class="intro-copy">
+        <p class="eyebrow"><span></span> SHARE LIFE · GIVE BLOOD</p>
+        <h1>One small act.<br><span>A lifetime of</span><br>hope.</h1>
+        <p class="sub">Your one decision can make a world of difference. Join our community of donors and help make blood available when every second counts.</p>
+        <div class="stats">
+          <div class="stat"><strong>Be someone's</strong><small>reason to smile</small></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>Give hope</strong><small>right when it's needed</small></div>
+        </div>
+      </div>
+      <div class="photo-wrap">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1100&q=85" alt="Healthcare professional preparing a blood donation">
+        <div class="photo-shade"></div>
+        <div class="photo-caption"><span class="caption-icon">♥</span><div><strong>Every drop matters</strong><small>Be the reason someone gets another chance.</small></div></div>
+        <div class="floating-note"><span class="pulse-dot"></span> Your kindness saves lives</div>
+      </div>
+    </section>
+
+    <section class="form-side reveal">
+      <div class="form-card">
+        <div class="card-top">
+          <div class="form-icon">✚</div>
+          <div class="step-label">JOIN THE COMMUNITY <span>01 / 01</span></div>
+        </div>
+        <h2>Create your account</h2>
+        <p class="muted">A few details are all it takes to get started.</p>
+        <form id="registrationForm" novalidate>
+          <div class="field"><label for="fullName">Full name</label><div class="input-wrap"><span class="input-icon">♙</span><input id="fullName" name="fullName" placeholder="e.g. Bansi Nakum" autocomplete="name"></div><small class="error" id="nameError"></small></div>
+          <div class="field"><label for="email">Email address</label><div class="input-wrap"><span class="input-icon">✉</span><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email"></div><small class="error" id="emailError"></small></div>
+          <div class="field"><label for="phone">Mobile number</label><div class="input-wrap"><span class="input-icon">☎</span><input id="phone" name="phone" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" autocomplete="tel"></div><small class="error" id="phoneError"></small></div>
+          <div class="field"><label for="bloodGroup">Blood group</label><div class="input-wrap select-wrap"><span class="input-icon blood-icon">✚</span><select id="bloodGroup" name="bloodGroup"><option value="">Choose your blood group</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div><small class="error" id="bloodError"></small></div>
+          <div class="field"><label for="password">Password</label><div class="input-wrap"><span class="input-icon">♧</span><input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password"><button class="toggle-password" type="button" data-toggle="password" aria-label="Show password">Show</button></div><small class="error" id="passwordError"></small></div>
+          <div class="field"><label for="confirmPassword">Confirm password</label><div class="input-wrap"><span class="input-icon">♧</span><input id="confirmPassword" name="confirmPassword" type="password" placeholder="Re-enter your password" autocomplete="new-password"><button class="toggle-password" type="button" data-toggle="confirmPassword" aria-label="Show confirm password">Show</button></div><small class="error" id="confirmError"></small></div>
+          <label class="check"><input id="consent" type="checkbox"><span class="custom-check"></span><span>I confirm that the information provided is correct.</span></label>
+          <small class="error consent-error" id="consentError"></small>
+          <button class="submit-btn" type="submit"><span>Create account</span><span class="btn-arrow">→</span></button>
+          <p id="successMessage" class="success" role="status" aria-live="polite"></p>
+        </form>
+        <p class="secure-note"><span>⌑</span> Your information is kept safe and secure.</p>
+      </div>
+      <p class="side-footer">Already part of the movement? <a href="#">Keep spreading hope.</a></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
